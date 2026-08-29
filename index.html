@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JalSathi | Water Conservation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">💧 JalSathi</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#calculator">Calculator</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usage">Water Usage</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tips">Tips</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-text">
+
+                    <h1>Every Drop Matters.</h1>
+
+                    <p>
+                        JalSathi helps households understand how their
+                        everyday activities use water and encourages
+                        simple habits that can reduce unnecessary wastage.
+                    </p>
+
+                    <a href="#calculator" class="btn main-btn">
+                        Check Your Water Usage
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1000&q=80"
+                        alt="Water conservation"
+                        class="hero-img">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about section-padding" id="about">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>Why JalSathi?</h2>
+
+                <p class="section-text">
+
+                    Water is essential for daily life, but a large amount
+                    of water is wasted through small everyday habits.
+                    People often do not think about how much water they
+                    use for bathing, washing clothes, cleaning, cooking
+                    and gardening.
+
+                    JalSathi helps users understand their approximate
+                    household water usage and encourages them to make
+                    better water-saving choices.
+
+                </p>
+
+            </div>
+
+
+            <div class="row mt-5">
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="icon">💧</div>
+
+                        <h4>Understand Usage</h4>
+
+                        <p>
+                            Check how daily household activities contribute
+                            to water consumption.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="icon">📊</div>
+
+                        <h4>Estimate Usage</h4>
+
+                        <p>
+                            Use the calculator to get an approximate idea
+                            of your household water usage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="icon">🌱</div>
+
+                        <h4>Save Water</h4>
+
+                        <p>
+                            Learn simple habits that can help reduce
+                            unnecessary water wastage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="calculator-section section-padding" id="calculator">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>Check Your Daily Water Usage</h2>
+
+                <p class="calculator-intro">
+
+                    Enter how many times your household performs these
+                    activities in one day. JalSathi will estimate the
+                    approximate amount of water used.
+
+                </p>
+
+            </div>
+
+
+            <div class="calculator-box">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label for="bathing">
+                            Number of People Bathing Per Day
+                        </label>
+
+                        <input type="number" id="bathing"
+                            class="form-control"
+                            placeholder="Example: 4"
+                            min="0">
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-3">
+
+                        <label for="laundry">
+                            Number of Laundry Loads Per Day
+                        </label>
+
+                        <input type="number" id="laundry"
+                            class="form-control"
+                            placeholder="Example: 1"
+                            min="0">
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-3">
+
+                        <label for="kitchen">
+                            Kitchen Usage Per Day
+                        </label>
+
+                        <input type="number" id="kitchen"
+                            class="form-control"
+                            placeholder="Example: 3"
+                            min="0">
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-3">
+
+                        <label for="gardening">
+                            Gardening Sessions Per Day
+                        </label>
+
+                        <input type="number" id="gardening"
+                            class="form-control"
+                            placeholder="Example: 1"
+                            min="0">
+
+                    </div>
+
+                </div>
+
+
+                <div class="text-center">
+
+                    <button onclick="calculateWater()" class="btn calculate-btn">
+                        Calculate My Usage
+                    </button>
+
+                </div>
+
+
+                <div id="resultBox" class="result-box">
+
+                    <h4>Your Estimated Daily Water Usage</h4>
+
+                    <h2 id="waterResult">0 Litres</h2>
+
+                    <p id="waterMessage">
+                        Enter your household activities and click calculate.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="usage section-padding" id="usage">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>Where Does Household Water Go?</h2>
+
+                <p>
+                    Everyday activities can use a significant amount of water.
+                </p>
+
+            </div>
+
+
+            <div class="row mt-4">
+
+                <div class="col-md-3">
+
+                    <div class="usage-card">
+
+                        <h4>🚿</h4>
+
+                        <h5>Bathing</h5>
+
+                        <p>
+                            Bathing can use a large amount of water,
+                            especially when taps are left running.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="usage-card">
+
+                        <h4>👕</h4>
+
+                        <h5>Laundry</h5>
+
+                        <p>
+                            Washing small loads frequently can increase
+                            unnecessary water consumption.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="usage-card">
+
+                        <h4>🍽️</h4>
+
+                        <h5>Kitchen</h5>
+
+                        <p>
+                            Water is used for washing vegetables,
+                            utensils and other daily activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="usage-card">
+
+                        <h4>🌿</h4>
+
+                        <h5>Gardening</h5>
+
+                        <p>
+                            Using water carefully for plants can help
+                            prevent unnecessary wastage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="habits-section section-padding">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>Small Change, Better Habit</h2>
+
+                <p>
+                    Simple changes in daily life can help reduce water wastage.
+                </p>
+
+            </div>
+
+
+            <div class="row mt-4">
+
+                <div class="col-md-6">
+
+                    <div class="habit-card">
+
+                        <h4>❌ Wasteful Habit</h4>
+
+                        <p>
+                            Keeping the tap running while brushing teeth
+                            or washing utensils.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="better-card">
+
+                        <h4>✓ Better Habit</h4>
+
+                        <p>
+                            Turn off the tap whenever water is not
+                            immediately required.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="habit-card">
+
+                        <h4>❌ Wasteful Habit</h4>
+
+                        <p>
+                            Washing clothes in very small loads.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="better-card">
+
+                        <h4>✓ Better Habit</h4>
+
+                        <p>
+                            Wait until there is a reasonable load before
+                            using the washing machine.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="habit-card">
+
+                        <h4>❌ Wasteful Habit</h4>
+
+                        <p>
+                            Using clean fresh water when reusable water
+                            could be used for suitable purposes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="better-card">
+
+                        <h4>✓ Better Habit</h4>
+
+                        <p>
+                            Reuse suitable household water for activities
+                            such as cleaning or gardening where appropriate.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="tips-section" id="tips">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>Today's Water Saving Challenge</h2>
+
+                <p class="challenge-text">
+                    Try to save at least one bucket of water today.
+                </p>
+
+            </div>
+
+
+            <div class="row mt-4">
+
+                <div class="col-md-6">
+
+                    <ul class="tips-list">
+
+                        <li>Turn off taps properly after use.</li>
+
+                        <li>Fix leaking taps and pipes.</li>
+
+                        <li>Use a bucket instead of a hose when possible.</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <ul class="tips-list">
+
+                        <li>Reuse suitable water whenever possible.</li>
+
+                        <li>Collect rainwater for plants.</li>
+
+                        <li>Avoid wasting clean drinking water.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="pledge-box">
+
+                <h3>My Water Saving Pledge</h3>
+
+                <div class="pledge-item">
+
+                    <input type="checkbox" id="pledge1">
+
+                    <label for="pledge1">
+                        I will turn off taps when they are not needed.
+                    </label>
+
+                </div>
+
+
+                <div class="pledge-item">
+
+                    <input type="checkbox" id="pledge2">
+
+                    <label for="pledge2">
+                        I will avoid wasting clean water.
+                    </label>
+
+                </div>
+
+
+                <div class="pledge-item">
+
+                    <input type="checkbox" id="pledge3">
+
+                    <label for="pledge3">
+                        I will encourage others to save water.
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="sdg-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=1000&q=80"
+                        alt="Clean water"
+                        class="section-img">
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <h2>SDG 6: Clean Water and Sanitation</h2>
+
+                    <p>
+                        JalSathi supports Sustainable Development Goal 6
+                        by encouraging responsible use of water and creating
+                        awareness about water conservation.
+                    </p>
+
+                    <p>
+                        The purpose is simple: understand your water usage,
+                        reduce unnecessary wastage and develop better habits
+                        for a sustainable future.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>Contact</h2>
+
+                <p>
+                    Have a question or suggestion about JalSathi?
+                </p>
+
+            </div>
+
+
+            <div class="contact-box text-center">
+
+                <h4>Get In Touch</h4>
+
+                <p>
+                    <strong>Email:</strong>
+
+                    <a href="mailto:240860116064@laxmi.edu.in">
+                        240860116064@laxmi.edu.in
+                    </a>
+
+                </p>
+
+
+                <p>
+                    Click the email address to contact us.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container text-center">
+
+            <h4>💧 JalSathi</h4>
+
+            <p>Save Water Today for a Better Tomorrow.</p>
+
+            <p class="footer-text">
+               Nirmiti S. Datajwar | 240860116064 | Web Application Development PBL Project |
+                Semester V | Information Technology
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        function calculateWater() {
+
+            let bathing = Number(document.getElementById("bathing").value) || 0;
+            let laundry = Number(document.getElementById("laundry").value) || 0;
+            let kitchen = Number(document.getElementById("kitchen").value) || 0;
+            let gardening = Number(document.getElementById("gardening").value) || 0;
+
+            let totalWater =
+                (bathing * 50) +
+                (laundry * 70) +
+                (kitchen * 20) +
+                (gardening * 30);
+
+            document.getElementById("waterResult").innerHTML =
+                totalWater + " Litres";
+
+            let message = "";
+
+            if (totalWater === 0) {
+
+                message =
+                    "Please enter at least one activity to estimate your water usage.";
+
+            }
+
+            else if (totalWater < 150) {
+
+                message =
+                    "Your estimated usage is relatively low. Keep following good water-saving habits.";
+
+            }
+
+            else if (totalWater < 400) {
+
+                message =
+                    "Your estimated usage is moderate. Look for small ways to reduce unnecessary water use.";
+
+            }
+
+            else {
+
+                message =
+                    "Your estimated usage is high. Try reducing unnecessary water use and follow the water-saving tips below.";
+
+            }
+
+            document.getElementById("waterMessage").innerHTML = message;
+
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
